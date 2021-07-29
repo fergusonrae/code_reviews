@@ -13,13 +13,7 @@ However, the array might contain duplicate elements.
 from typing import List, Set
 
 def get_happiness(integers: List[int], set_a: Set[int], set_b: Set[int]) -> int:
-    happiness = 0
-    for integer in integers:
-        if integer in set_a:
-            happiness += 1
-        elif integer in set_b:
-            happiness += -1
-    return happiness
+    raise NotImplementedError
 
 
 def test_get_happiness():

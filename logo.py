@@ -25,10 +25,6 @@ def get_company_logo(logo) -> List[tuple]:
     return NotImplementedError
 
 
-if __name__ == '__main__':
-    s = input()
-    get_company_logo(s)
-
 def test_get_company_logo():
 
     logo = "aabc"

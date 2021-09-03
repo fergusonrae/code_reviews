@@ -17,6 +17,6 @@ def get_happiness(integers: List[int], set_a: Set[int], set_b: Set[int]) -> int:
     for integer in integers:
         if integer in set_a:
             happiness += 1
-        elif integer in set_b:
+        if integer in set_b:
             happiness += -1
     return happiness

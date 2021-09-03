@@ -1,5 +1,5 @@
 """
-There are disjoint sets, A and B, each containing integers. 
+There are sets, A and B, each containing integers. 
 You like all the integers in set A and dislike all the integers in set B. 
 
 Your initial happiness is 0. For each integer in the array, if the int is in A,
@@ -13,4 +13,10 @@ However, the array might contain duplicate elements.
 from typing import List, Set
 
 def get_happiness(integers: List[int], set_a: Set[int], set_b: Set[int]) -> int:
-    raise NotImplementedError
+    happiness = 0
+    for integer in integers:
+        if integer in set_a:
+            happiness += 1
+        elif integer in set_b:
+            happiness += -1
+    return happiness

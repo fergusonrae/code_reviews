@@ -38,3 +38,9 @@ def test_get_happiness():
     set_b = {2, 5, 34, 42, 12, 14}
     integers_to_check = [80, 80, 80, 5, 2, 12]
     assert get_happiness(integers_to_check, set_a, set_b) == 0
+
+    # Test 6
+    set_a = {1, 3, 4}
+    set_b = {2, 5, 3}
+    integers_to_check = [1, 3]
+    assert get_happiness(integers_to_check, set_a, set_b) == 1

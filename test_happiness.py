@@ -43,4 +43,4 @@ def test_get_happiness():
     set_a = {1, 3, 4}
     set_b = {2, 5, 3}
     integers_to_check = [1, 3]
-    assert get_happiness(integers_to_check, set_a, set_b) == 1
+    assert get_happiness(integers_to_check, set_a, set_b) == 0
